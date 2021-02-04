@@ -1,60 +1,80 @@
-h2 {
-	font-size: 24px;
-	margin-bottom: 10px;
-	margin-top: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
 }
 
-form {
-	width: 500px;
-	background-color: #FFFFFF;
-	border-radius: 5px;
-	padding: 30px;
+:root{
+    --blue: #2E5096;
 }
 
-body {
-	font-family: Roboto;
-	background-color: #E5E5E5;
-	max-width: 700px;
-	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
+#container {
+    min-height: 100vh;
+    display: flex;
 }
 
-label {
-	font-size: 12px;
-	font-weight: 700;
+.left-col {
+    width: 50vw;
+    background-image: url("left-loging.png");
+}
+
+.right-col {
+    background-color: #F5F5F5;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+  justify-content: center
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2em;
 }
 
 input {
-	display: block;
-	height: 40px;
-	border-color: #2E5096;
-	border-width: 2px;
-  	border-style: solid;
-  	border-radius: 5px;
-  	margin-top: 10px;
-  	margin-bottom: 10px;
-  	width: 100%;
-  	padding-left: 10px;
+    display: block;
+    width: 100%;
+    border: solid 1px;
+    border-color: var(--blue);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+
+}
+
+label {
+    font-size: 14px;
+}
+
+.form-container h2{
+    margin-bottom: 1em;
+    color: var(--blue);
 }
 
 .btn {
-	color: white;
-	background-color: #2E5096;
-	font-size: 14px;
-	border-radius: 5px;
-	border: none;
-	display: inline-flex;
-	align-items: center;
-	padding: 5px 10px;
-	margin-top: 20px;
+    background-color: var(--blue);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
 
-.btn img{
-	margin-right: 5px;
+.btn:hover {
+    background-color: #1A3C82;
 }
 
-.btn:hover{
-	background-color: #103278;
+a img {
+    margin-right: 0.6em;
 }
